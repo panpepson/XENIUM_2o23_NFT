@@ -1,19 +1,5 @@
 # XENIUM_2o23_NFT
- .  .  . ..______                         .  .   . . o O O .  __
-           \    /_____ ...    .o 0 9    ... _______   .________)\  
-           /    /     /______ ___ _()_ __  __} {}  \  )         /
-          /    X     /  `_/  |   |    |  \(  |  _ - )(   ----  / ^p^     
- 2o23 |=//_____      \___(___^___|____|________/   =  =  __ ___\
- ___________ , \_____\... (_) (_) (_) (+) ..)____OOoo---Ooo--Ooo//= _ _____ __  
-   xenium                                                                  ((o))
-     // NFT 4 fun!                                                           |
-      |                           .o0o.                                      |  
-      |        DemoParty NFT - Xenium 2023 NFT colection by pepson           |
-      |  max supplay -12 nfts - contract available on Poligon blockchain     |
-      |  is's a commemorative NFT's, something like a - St.Jacob's shell :)  | 
-    ((o))___________________________________________________________________//
-
-
+DemoParty NFT - Xenium 2023 NFT colection by pepson max supplay -12 nfts - contract available on Poligon blockchain  is's a commemorative NFT's, something like a - St.Jacob's shell :)
 
 XENIUM_2o23_NFT--.
                  |
