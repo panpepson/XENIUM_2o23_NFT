@@ -94,11 +94,17 @@ const contract = new web3.eth.Contract(contractABI, contractAddress);
             const accounts = await web3.eth.getAccounts();
             const userAddress = accounts[0];
             document.getElementById('connectButton').innerHTML = `Jesteś zalogowany jako: <br><b>${userAddress}</b>`;
-            const balance = await web3.eth.getBalance(userAddress).toFixed(2);
+            const balance = await web3.eth.getBalance(userAddress);
             const formattedBalance = web3.utils.fromWei(balance, 'ether');
-            document.getElementById('balance').innerHTML = `<p class="rounded-pill bg-success kasa">Saldo konta to : <br><b>${formattedBalance}</b> MATIC</p>`;
+
+function fin(x) {
+  return Number.parseFloat(x).toFixed(2);
+}
+
+     document.getElementById('balance').innerHTML = `<p class="rounded-pill bg-success kasa">Saldo konta to : <br><b>${fin(formattedBalance)}</b> MATIC</p>`;
             const numMinted = await contract.methods.numMinted().call();
             const userBalance = await contract.methods.balanceOf(userAddress).call();
+        
 if (numMinted >= 12) {
               document.getElementById('buyInfo').innerHTML = '<b>Bida 🤔 ziom, spóźniłeś się </b>teraz już tylko możesz zdobyć już wymintowane <b>Xenium_2o23_NFT</b> na <a href="https://opensea.io/" target="_blank">https://opensea.io</a>';
             } else if (userBalance > 0) {
