@@ -94,9 +94,9 @@ const contract = new web3.eth.Contract(contractABI, contractAddress);
             const accounts = await web3.eth.getAccounts();
             const userAddress = accounts[0];
             document.getElementById('connectButton').innerHTML = `Jesteś zalogowany jako: <br><b>${userAddress}</b>`;
-            const balance = await web3.eth.getBalance(userAddress);
+            const balance = await web3.eth.getBalance(userAddress).toFixed(2);
             const formattedBalance = web3.utils.fromWei(balance, 'ether');
-            document.getElementById('balance').innerHTML = `<p class="rounded-pill bg-success kasa">Saldo konta to : <br><b>${formattedBalance.toFixed(2)}</b> MATIC</p>`;
+            document.getElementById('balance').innerHTML = `<p class="rounded-pill bg-success kasa">Saldo konta to : <br><b>${formattedBalance}</b> MATIC</p>`;
             const numMinted = await contract.methods.numMinted().call();
             const userBalance = await contract.methods.balanceOf(userAddress).call();
 if (numMinted >= 12) {
