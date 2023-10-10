@@ -97,8 +97,9 @@ const contract = new web3.eth.Contract(contractABI, contractAddress);
             const balance = await web3.eth.getBalance(userAddress);
             const formattedBalance = web3.utils.fromWei(balance, 'ether');
 
+// ucina do 3 pozycji o przecinku  
 function fin(x) {
-  return Number.parseFloat(x).toFixed(2);
+  return Number.parseFloat(x).toFixed(3);
 }
 
      document.getElementById('balance').innerHTML = `<p class="rounded-pill bg-success kasa">Saldo konta to : <br><b>${fin(formattedBalance)}</b> MATIC</p>`;
